@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="1100.0" style="-fx-background-color: #ffffe9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tela.equipamento.FXMLTelaEquipamentoConsultarController">
+   <children>
+      <AnchorPane layoutX="114.0" layoutY="114.0" prefHeight="140.0" prefWidth="1100.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Separator layoutX="114.0" layoutY="45.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+            <JFXTextField fx:id="tfSigla" focusColor="#ee2222" labelFloat="true" layoutX="14.0" layoutY="40.0" onKeyReleased="#cliqueBotaoTeclado" prefHeight="38.0" prefWidth="354.0" promptText="SIGLA" unFocusColor="BLACK" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfFabricante" focusColor="#ee2222" labelFloat="true" layoutX="452.0" layoutY="45.0" prefHeight="38.0" prefWidth="330.0" promptText="FABRICANTE" unFocusColor="BLACK" AnchorPane.leftAnchor="420.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfMatricula" focusColor="#ee2222" labelFloat="true" layoutX="656.0" layoutY="21.0" prefHeight="38.0" prefWidth="172.0" promptText="MATRICULA" unFocusColor="BLACK" AnchorPane.leftAnchor="775.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="76.0" layoutY="23.0" text="I N D E N T I F I C A Ç Ã O :" textFill="#708690" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="124.0" layoutY="55.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="108.0" layoutY="188.0" prefHeight="400.0" prefWidth="1080.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="180.0">
+         <children>
+            <Separator layoutX="114.0" layoutY="45.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+            <JFXListView fx:id="lvEquipamento" layoutX="-14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0" />
+            <Separator layoutX="124.0" layoutY="55.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <Button fx:id="btAtualizar" layoutX="896.0" layoutY="608.0" mnemonicParsing="false" onAction="#actionBtAtualizar" prefHeight="90.0" prefWidth="170.0" style="-fx-background-color: #FFFFFF;" text="ATUALIZAR" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btConsultar" layoutX="634.0" layoutY="616.0" mnemonicParsing="false" onAction="#actionBtConsultar" prefHeight="90.0" prefWidth="170.0" style="-fx-background-color: #FFFFFF;" text="CONSULTAR" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="250.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

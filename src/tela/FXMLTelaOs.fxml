@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apTelaEquipe" prefHeight="394.0" prefWidth="600.0" style="-fx-background-color: #2a2a2a;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tela.FXMLTelaOsController">
+ <children>
+      <AnchorPane layoutX="170.0" layoutY="126.0" maxHeight="60.0" minHeight="60.0" prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="60.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="btGerar" mnemonicParsing="false" onAction="#actionBtGerar" prefHeight="131.0" prefWidth="370.0" style="-fx-background-color: #000000;" text="GERAR" textFill="WHITE">
+                     <font>
+                        <Font name="Baskerville Old Face" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btMotificar" mnemonicParsing="false" onAction="#actionBtMotificar" prefHeight="60.0" prefWidth="370.0" style="-fx-background-color: #000000;" text="MOTIFICAR" textFill="WHITE">
+                     <font>
+                        <Font name="Baskerville Old Face" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btFinalizar" mnemonicParsing="false" onAction="#actionBtFinalizar" prefHeight="60.0" prefWidth="370.0" style="-fx-background-color: #000000;" text="FINALIZAR" textFill="WHITE">
+                     <font>
+                        <Font name="Baskerville Old Face" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apTelaEquipe" layoutX="200.0" layoutY="128.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+   </children>
+</AnchorPane>

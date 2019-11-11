@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #ffffe9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tela.FXMLTelaLoginController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="40.0" prefHeight="0.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="76.0" layoutY="23.0" text="L O G I N:" textFill="#708690" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="tfUsuario" focusColor="BLACK" labelFloat="true" layoutX="76.0" layoutY="150.0" prefHeight="38.0" prefWidth="135.0" promptText="USUARIO" unFocusColor="BLACK" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="60.0">
+               <font>
+                  <Font name="Bodoni Bk BT Book" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="tfSenha" focusColor="BLACK" labelFloat="true" layoutX="123.0" layoutY="63.0" onKeyPressed="#ontecla" promptText="SENHA" unFocusColor="BLACK" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="130.0">
+               <font>
+                  <Font name="Bodoni Bk BT Book" size="14.0" />
+               </font></JFXPasswordField>
+            <JFXButton fx:id="btEntrar" layoutX="284.0" layoutY="239.0" onAction="#actionBtEntrar" text="ENTRAR" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="50.0" />
+            <JFXButton fx:id="btFechar" layoutX="214.0" layoutY="239.0" onAction="#actionBtFechar" text="FECHAR" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" />
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

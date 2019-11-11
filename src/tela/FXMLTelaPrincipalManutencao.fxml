@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" maxHeight="700.0" maxWidth="1300.0" minHeight="700.0" minWidth="1300.0" prefHeight="700.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tela.FXMLTelaPrincipalManutencaoController">
+    <stylesheets>
+        <URL value="@fxmltelaprincipal.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="apMenuPricimpal" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="vbMenuPrincipal" prefHeight="800.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="imagemLogo" fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="btOs" maxHeight="60.0" maxWidth="200.0" minHeight="60.0" minWidth="200.0" mnemonicParsing="false" onAction="#actionBtOs" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #000000;" text="ORDEM SERVIÇO" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btEquipamento" maxHeight="60.0" maxWidth="200.0" minHeight="60.0" minWidth="200.0" mnemonicParsing="false" onAction="#actionBtEquipamento" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #000000;" text="EQUIPAMENTO" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btRelatorio" maxHeight="60.0" maxWidth="200.0" minHeight="60.0" minWidth="200.0" mnemonicParsing="false" onAction="#actionBtRelatorio" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #000000;" text="RELATORIOS" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btSair" maxHeight="60.0" maxWidth="200.0" minHeight="60.0" minWidth="200.0" mnemonicParsing="false" onAction="#actionBtSair" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #000000;" text="SAIR" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apTela" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

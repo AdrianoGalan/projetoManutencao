@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="1100.0" style="-fx-background-color: #ffffe9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tela.usuario.FXMLTelaUsuarioAtualizarController">
+   <children>
+      <AnchorPane layoutX="114.0" layoutY="114.0" prefHeight="366.0" prefWidth="1080.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Separator layoutX="114.0" layoutY="45.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+            <Label layoutX="76.0" layoutY="23.0" text="I N D E N T I F I C A Ç Ã O :" textFill="#708690" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="124.0" layoutY="55.0" prefHeight="2.0" prefWidth="1080.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <JFXComboBox fx:id="cbNome" focusColor="#ee2222" labelFloat="true" layoutX="63.0" layoutY="70.0" onAction="#actioncbFincionario" prefHeight="38.0" prefWidth="403.0" promptText="FUNCIONARIO" unFocusColor="BLACK" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="70.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+            <JFXComboBox fx:id="cbNivel" focusColor="#ee2222" labelFloat="true" layoutX="598.0" layoutY="79.0" prefHeight="38.0" prefWidth="193.0" promptText="NIVEL DE ACESSO" unFocusColor="BLACK" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="70.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+            <JFXTextField fx:id="tfUsuario" focusColor="#ee2222" labelFloat="true" layoutX="73.0" layoutY="141.0" prefHeight="38.0" prefWidth="182.0" promptText="LOGIN" unFocusColor="BLACK" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="160.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cbStatus" focusColor="#ee2222" labelFloat="true" layoutX="602.0" layoutY="146.0" prefHeight="38.0" prefWidth="193.0" promptText="STATUS" unFocusColor="BLACK" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="160.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+            <JFXPasswordField fx:id="tfSenhaNova" labelFloat="true" layoutX="318.0" layoutY="231.0" onKeyPressed="#onTecla" promptText="NOVA SENHA" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="300.0" />
+            <JFXPasswordField fx:id="tfConfirmaSenha" labelFloat="true" layoutX="619.0" layoutY="231.0" onKeyPressed="#onTecla" promptText="CONFIRMA SENHA" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="300.0" />
+            <JFXCheckBox fx:id="checBoxFuncionarioInativo" layoutX="50.0" layoutY="115.0" onAction="#actionchecBoxFuncionarioInativo" text="EXIBIR USUARIOS INATIVOS" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="115.0">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </JFXCheckBox>
+            <Label layoutX="43.0" layoutY="221.0" text="A T U A L I Z A R  S E N H A:" textFill="#708690" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="260.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="134.0" layoutY="65.0" prefHeight="2.0" prefWidth="1080.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="0.0" />
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <Button fx:id="btLimpar" layoutX="634.0" layoutY="616.0" mnemonicParsing="false" onAction="#actionBtLimpar" prefHeight="90.0" prefWidth="170.0" style="-fx-background-color: #FFFFFF;" text="LIMPAR" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="250.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btAtualizar" layoutX="896.0" layoutY="608.0" mnemonicParsing="false" onAction="#actionBtAtualizar" prefHeight="90.0" prefWidth="170.0" style="-fx-background-color: #FFFFFF;" text="ATUALIZAR" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
